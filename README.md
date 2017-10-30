@@ -1,7 +1,9 @@
-# range-generator
+# Range generator
 
 [![Coverage Status](https://coveralls.io/repos/github/ptopczewski/range-generator/badge.svg?branch=master)](https://coveralls.io/github/ptopczewski/range-generator?branch=master)
 [![Build Status](https://travis-ci.org/ptopczewski/range-generator.svg?branch=master)](https://travis-ci.org/ptopczewski/range-generator)
+
+A small lib for generating a range array by a start and end value.
 
 ## Examples
 
@@ -54,7 +56,7 @@ $values = $generator->buildRange('020', '015');
 require 'vendor/autoload.php';
 
 $generator = new \RangeGenerator\Services\Generator();
-$generator->addHandler(new \RangeGenerator\Services\Handlers\Numeric());
+$generator->addHandler(new \RangeGenerator\Services\Handlers\Character());
 
 $values = $generator->buildRange('AAB', 'AAF');
 
@@ -74,7 +76,7 @@ $values = $generator->buildRange('AAB', 'AAF');
 require 'vendor/autoload.php';
 
 $generator = new \RangeGenerator\Services\Generator();
-$generator->addHandler(new \RangeGenerator\Services\Handlers\Numeric());
+$generator->addHandler(new \RangeGenerator\Services\Handlers\NumericWithLabel());
 
 $values = $generator->buildRange('MyZone04 - medium', 'MyZone09 - medium'');
 
