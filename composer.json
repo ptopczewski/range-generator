@@ -1,0 +1,19 @@
+{
+    "name": "topo/range-generator",
+    "description": "Generates an array of value by an alpha-numeric range",
+    "authors": [
+        {
+            "name": "Patryk Topczewski",
+            "email": "patryk.topczewski@plentymarkets.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RangeGenerator\\": "src/"
+        }
+    },
+    "require": {},
+    "require-dev":{
+        "phpunit/phpunit": "~5.7"
+    }
+}
