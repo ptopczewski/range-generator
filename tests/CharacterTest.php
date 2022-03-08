@@ -13,7 +13,7 @@ class CharacterTest extends TestCase
         $generator->addHandler(new Character());
 
         $range = $generator->buildRange('aBa', 'aBf');
-        $this->assertCount(6, $range, $range);
+        $this->assertCount(6, $range, 'range of 6');
         $this->assertEquals('aBc', $range[2]);
     }
 
@@ -24,7 +24,7 @@ class CharacterTest extends TestCase
         $generator->addHandler(new Character());
 
         $range = $generator->buildRange('aBf', 'aBa');
-        $this->assertCount(6, $range, $range);
+        $this->assertCount(6, $range, 'range of 6');
         $this->assertEquals('aBd', $range[2]);
     }
 
