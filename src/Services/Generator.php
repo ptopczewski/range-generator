@@ -3,7 +3,6 @@ namespace RangeGenerator\Services;
 
 use RangeGenerator\Contracts\Handler;
 use RangeGenerator\Models\RangeInformation;
-use RangeGenerator\Services\Handlers\Numeric;
 
 /**
  * Class Generator

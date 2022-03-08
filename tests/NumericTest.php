@@ -1,11 +1,13 @@
 <?php
+
+use PHPUnit\Framework\TestCase;
 use RangeGenerator\Services\Generator;
 use RangeGenerator\Services\Handlers\Numeric;
 
 /**
  * Class NumericTest
  */
-class NumericTest extends \PHPUnit\Framework\TestCase
+class NumericTest extends TestCase
 {
     public function testCanBuildASimpleNumericRange()
     {
