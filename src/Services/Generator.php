@@ -38,10 +38,18 @@ class Generator
                 if ($rangeInformation->isReversed()) {
                     for ($value = $rangeInformation->getStartValue(); $value >= $rangeInformation->getEndValue(); $value--) {
                         $rangeValues[] = $value;
+
+                        if ($value === $rangeInformation->getEndValue()) {
+                            break;
+                        }
                     }
                 } else {
                     for ($value = $rangeInformation->getStartValue(); $value <= $rangeInformation->getEndValue(); $value++) {
                         $rangeValues[] = $value;
+
+                        if ($value === $rangeInformation->getEndValue()) {
+                            break;
+                        }
                     }
                 }
                 return $handler->rebuildValues($rangeValues);
